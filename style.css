@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url("fondo.jpeg") center / cover no-repeat fixed;
+  color: #333;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.cv {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #ffffffee;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* PERFIL */
+.perfil {
+  background: #1f2933;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.perfil img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.perfil h1 {
+  margin: 15px 0 5px;
+  font-size: 22px;
+}
+
+.area {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.contacto {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* INFO */
+.info {
+  padding: 35px;
+}
+
+.bloque {
+  margin-bottom: 30px;
+}
+
+.bloque h2 {
+  margin-bottom: 10px;
+  color: #1f2933;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.experiencia h3 {
+  margin-bottom: 5px;
+}
+
+.experiencia span {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+
+.experiencia ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.doble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.habilidades span {
+  background: #1f2933;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* FOOTER */
+footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
